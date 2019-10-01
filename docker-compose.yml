@@ -1,0 +1,8 @@
+version: "3"
+services:
+  tensorflow:
+    image: tensorflow/tensorflow:2.0.0rc0-py3-jupyter
+    ports:
+      - 8888:8888
+    volumes:
+        - ./notebooks:/tf/tensorflow-tutorials
